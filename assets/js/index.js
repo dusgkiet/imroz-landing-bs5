@@ -75,3 +75,13 @@ closeBtn.addEventListener("click", () => {
     });
   });
 })(jQuery);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('a[href="#"]').forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.location.href = "notfound.html";
+    });
+  });
+});
